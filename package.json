@@ -14,7 +14,7 @@
     "contributes": {
         "snippets": [{
             "language": "python",
-            "path": "./snippets/main.json"
+            "path": "./snippets/main.min.json"
         }]
     }
 }
