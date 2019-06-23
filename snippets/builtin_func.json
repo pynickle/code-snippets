@@ -1,0 +1,65 @@
+{
+    "abs": {
+        "prefix": "abs",
+        "body": [
+            "abs(${1:number})"
+        ],
+        "description": "return an abslute value of a number"
+    },
+    "all": {
+        "prefix": "all",
+        "body": [
+            "all(${1:iterable})"
+        ],
+        "description": "return True if all elements of the iterable are true"
+    },
+    "any": {
+        "prefix": "any",
+        "body": [
+            "any(${1:iterable})"
+        ],
+        "description": "return True if any element of the iterable is true"
+    },
+    "ascii": {
+        "prefix": "ascii",
+        "body": [
+            "ascii(${1:str})"
+        ],
+        "description": "escape the non-ASCII characters"
+    },
+    "bin": {
+        "prefix": "bin",
+        "body": [
+            "bin(${1:str})"
+        ],
+        "description": "convert a number to a binary string prefixed with “0b”."
+    },
+    "bool": {
+        "prefix": "bool",
+        "body": [
+            "bool(${1:object})"
+        ],
+        "description": "return a boolean value"
+    },
+    "breakpoint": {
+        "prefix": "breakpoint",
+        "body": [
+            "breakpoint()"
+        ],
+        "description": "drop you into the debugger"
+    },
+    "bytearray": {
+        "prefix": "bytearray",
+        "body": [
+            "bytearray(${1:object})"
+        ],
+        "description": "return a new array of bytes"
+    },
+    "bytes": {
+        "prefix": "bytes",
+        "body": [
+            "bytes(${1:object})"
+        ],
+        "description": "return a new “bytes” object"
+    }
+}
