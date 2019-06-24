@@ -17,3 +17,7 @@ fix bugs
 ## 0.0.5
 
 fix bugs
+
+## 0.1.0
+
+finish statements and built-in functions
