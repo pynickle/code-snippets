@@ -1,0 +1,30 @@
+{
+    "os.walk": {
+        "prefix": "for",
+        "body": [
+            "for root, dirs, files in os.walk(${1:path}):"
+        ],
+        "description": "use os to walk the path"
+    },
+    "tkinter.Tk": {
+        "prefix":"root",
+        "body": [
+            "root = tkinter.Tk()"
+        ],
+        "description": "create a tkinter window"
+    },
+    "root.mainloop": {
+        "prefix": "root",
+        "body": [
+            "root.mainloop()"
+        ],
+        "description": "let tkinter window run"
+    },
+    "for enumerate": {
+        "prefix": "for",
+        "body": [
+            "for index, nums in enumerate(${1:iterable}):"
+        ],
+        "description": "enumerate the items in the iterable"
+    }
+}
