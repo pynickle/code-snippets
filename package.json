@@ -20,7 +20,19 @@
         "snippets": [
             {
                 "language": "python",
-                "path": "./snippets/main.json"
+                "path": "./snippets/statement.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/builtin_func.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/always.json"
             }
         ]
     },
