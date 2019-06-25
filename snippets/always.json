@@ -7,14 +7,14 @@
         "description": "use os to walk the path"
     },
     "tkinter.Tk": {
-        "prefix":"root",
+        "prefix":"Tk()",
         "body": [
             "root = tkinter.Tk()"
         ],
         "description": "create a tkinter window"
     },
     "root.mainloop": {
-        "prefix": "root",
+        "prefix": "mainloop()",
         "body": [
             "root.mainloop()"
         ],
@@ -35,24 +35,59 @@
         "description": "get every key and value in the dict"
     },
     "parser": {
-        "prefix": "parser",
+        "prefix": "ArgumentParser()",
         "body": [
             "parser = argparse.ArgumentParser()"
         ],
         "description": "create an argument parser from argparse"
     },
     "args": {
-        "prefix": "args",
+        "prefix": "parse_args",
         "body": [
             "args = parser.parse_args"
         ],
         "description": "parse the argument from argparse"
     },
     "add_argument": {
-        "prefix": "parser",
+        "prefix": "add_argument",
         "body": [
             "parser.add_argument(${1:name})"
         ],
         "description": "add an argument from argparse"
+    },
+    "numpy": {
+        "prefix": "numpy",
+        "body": [
+            "import numpy as np"
+        ],
+        "description": "import numpy module as np"
+    },
+    "matplotlib": {
+        "prefix": "matplotlib.pyplot",
+        "body": [
+            "from matplotlib.pyplot as plt"
+        ],
+        "description": "import pyplot in matplotlib as plt"
+    },
+    "listdir": {
+        "prefix": "listdir",
+        "body": [
+            "os.listdir(${1:path})"
+        ],
+        "description": "get all files under the path by os"
+    },
+    "system": {
+        "prefix": "system",
+        "body": [
+            "os.system(${1:command})"
+        ],
+        "description": "execute a command by os"
+    },
+    "getcwd": {
+        "prefix": "getcwd",
+        "body": [
+            "os.getcwd()"
+        ],
+        "description": "get your working directory right now"
     }
 }
