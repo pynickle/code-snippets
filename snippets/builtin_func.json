@@ -1,0 +1,478 @@
+{
+    "abs": {
+        "prefix": "abs",
+        "body": [
+            "abs(${1:number})"
+        ],
+        "description": "return an abslute value of a number"
+    },
+    "all": {
+        "prefix": "all",
+        "body": [
+            "all(${1:iterable})"
+        ],
+        "description": "return True if all elements of the iterable are true"
+    },
+    "any": {
+        "prefix": "any",
+        "body": [
+            "any(${1:iterable})"
+        ],
+        "description": "return True if any element of the iterable is true"
+    },
+    "ascii": {
+        "prefix": "ascii",
+        "body": [
+            "ascii(${1:str})"
+        ],
+        "description": "escape the non-ASCII characters"
+    },
+    "bin": {
+        "prefix": "bin",
+        "body": [
+            "bin(${1:str})"
+        ],
+        "description": "convert a number to a binary string prefixed with “0b”."
+    },
+    "bool": {
+        "prefix": "bool",
+        "body": [
+            "bool(${1:object})"
+        ],
+        "description": "return a boolean value"
+    },
+    "breakpoint": {
+        "prefix": "breakpoint",
+        "body": [
+            "breakpoint()"
+        ],
+        "description": "drop you into the debugger"
+    },
+    "bytearray": {
+        "prefix": "bytearray",
+        "body": [
+            "bytearray(${1:object})"
+        ],
+        "description": "return a new array of bytes"
+    },
+    "bytes": {
+        "prefix": "bytes",
+        "body": [
+            "bytes(${1:object})"
+        ],
+        "description": "return a new “bytes” object"
+    },
+    "callable": {
+        "prefix": "callable",
+        "body": [
+            "callable(${1:object})"
+        ],
+        "description": "return True if the object argument appears callable"
+    },
+    "chr": {
+        "prefix": "chr",
+        "body": [
+            "chr(${1:integar})"
+        ],
+        "description": "return the string representing a character whose Unicode code point is the integer i"
+    },
+    "classmethod": {
+        "prefix": "classmethod",
+        "body": [
+            "classmethod(${function})"
+        ],
+        "description": "transform a method into a class method"
+    },
+    "compile": {
+        "prefix": "compile",
+        "body": [
+            "compile(${1:source}, ${2:filename}, ${3:mode})"
+        ],
+        "description": "compile the source into a code or AST object"
+    },
+    "complex": {
+        "prefix": "complex",
+        "body": [
+            "complex{${1:object})"
+        ],
+        "description": "return a complex number or convert a string or number to a complex number"
+    },
+    "delattr": {
+        "prefix": "",
+        "body": [
+            "delattr(${1:object}, ${2:name})"
+        ],
+        "description": "a relative of setattr()"
+    },
+    "dict": {
+        "prefix": "dict",
+        "body": [
+            "dict()"
+        ],
+        "description": "create a new dictionary"
+    },
+    "dir": {
+        "prefix": "dir",
+        "body": [
+            "dir()"
+        ],
+        "description": "return the list of names in the current local scope"
+    },
+    "divmod": {
+        "prefix": "divmod",
+        "body": [
+            "divmod(${1:a}, ${2:b})"
+        ],
+        "description": "return a pair of numbers consisting of their quotient and remainder"
+    },
+    "enumerate": {
+        "prefix": "enumerate",
+        "body": [
+            "enumerate(${1:iterable})"
+        ],
+        "description": "return an enumerate object"
+    },
+    "eval": {
+        "prefix": "eval",
+        "body": [
+            "eval(${1:exp})"
+        ],
+        "description": "the expression argument is parsed and evaluated as a Python expression"
+    },
+    "exec": {
+        "prefix": "exec",
+        "body": [
+            "exec(${1:object})"
+        ],
+        "description": "this function supports dynamic execution of Python code"
+    },
+    "filter": {
+        "prefix": "filter",
+        "body": [
+            "filter(${1:func}, ${2:iterable})"
+        ],
+        "description": "construct an iterator from elements of iterable for which function returns true"
+    },
+    "float": {
+        "prefix": "float",
+        "body": [
+            "float(${1:x})"
+        ],
+        "description": "return a floating point number constructed from a number or string x"
+    },
+    "format": {
+        "prefix": "format",
+        "body": [
+            "format(${1:value})"
+        ],
+        "description": "convert a value to a “formatted” representation"
+    },
+    "frozenset": {
+        "prefix": "frozenset",
+        "body": [
+            "frozenset(${1:iterable})"
+        ],
+        "description": "return a new frozenset object"
+    },
+    "getattr": {
+        "prefix": "getattr",
+        "body": [
+            "getattr(${1:object}, ${2:name})"
+        ],
+        "description": "return a new frozenset object"
+    },
+    "globals": {
+        "prefix": "globals",
+        "body": [
+            "globals()"
+        ],
+        "description": "return a dictionary representing the current global symbol table"
+    },
+    "hasattr": {
+        "prefix": "hasattr",
+        "body": [
+            "hasattr(${1:object}, ${2:name})"
+        ],
+        "description": "return True if the string is the name of one of the object's attributes"
+    },
+    "hash": {
+        "prefix": "hash",
+        "body": [
+            "hash(${1:object})"
+        ],
+        "description": "return the hash value of the object"
+    },
+    "help": {
+        "prefix": "help",
+        "body": [
+            "help(${1:object})"
+        ],
+        "description": "invoke the built-in help system"
+    },
+    "hex": {
+        "prefix": "hex",
+        "body": [
+            "hex(${1:x})"
+        ],
+        "description": "convert an integer number to a lowercase hexadecimal string prefixed with “0x”"
+    },
+    "id": {
+        "prefix": "id",
+        "body": [
+            "id(${1:object})"
+        ],
+        "description": "return the 'identity' of an object"
+    },
+    "input": {
+        "prefix": "input",
+        "body": [
+            "input()"
+        ],
+        "description": "read a line from input, converts it to a string"
+    },
+    "int": {
+        "prefix": "int",
+        "body": [
+            "int(${1:x})"
+        ],
+        "description": "return an integer object constructed from a number or string x"
+    },
+    "isinstance": {
+        "prefix": "isinstance",
+        "body": [
+            "isinstance(${1:object}, ${2:classinfo})"
+        ],
+        "description": "return true if the object argument is an instance of the classinfo argument"
+    },
+    "issubclass": {
+        "prefix": "issubclass",
+        "body": [
+            "issubclass(${1:class}, ${2:classinfo})"
+        ],
+        "description": "return true if class is a subclass"
+    },
+    "iter": {
+        "prefix": "iter",
+        "body": [
+            "iter(${1:object})"
+        ],
+        "description": "return an iterator object"
+    },
+    "len": {
+        "prefix": "len",
+        "body": [
+            "len(${1:s})"
+        ],
+        "description": "return the length of an object"
+    },
+    "list": {
+        "prefix": "list",
+        "body": [
+            "list(${1:iterable})"
+        ],
+        "description": "return a list"
+    },
+    "locals": {
+        "prefix": "locals",
+        "body": [
+            "locals()"
+        ],
+        "description": "update and return a dictionary representing the current local symbol table"
+    },
+    "map": {
+        "prefix": "map",
+        "body": [
+            "map(${1:func}, ${2:iterable})"
+        ],
+        "description": "return an iterator that applies function to every item of iterable"
+    },
+    "max": {
+        "prefix": "max",
+        "body": [
+            "max(${iterable})"
+        ],
+        "description": "return the largest item in an iterable"
+    },
+    "memoryview": {
+        "prefix": "memoryview",
+        "body": [
+            "memoryview(${1:object})"
+        ],
+        "description": "return a 'memory view' object"
+    },
+    "min": {
+        "prefix": "min",
+        "body": [
+            "min(${1:iterable})"
+        ],
+        "description": ""
+    },
+    "next": {
+        "prefix": "next",
+        "body": [
+            "next(${1:iterator})"
+        ],
+        "description": "retrieve the next item from the iterator"
+    },
+    "oct": {
+        "prefix": "oct",
+        "body": [
+            "oct(${1:x})"
+        ],
+        "description": "convert an integer number to an octal string prefixed with “0o”"
+    },
+    "open": {
+        "prefix": "open",
+        "body": [
+            "open(${1:file}, ${2:mode})"
+        ],
+        "description": "open file and return a corresponding file object"
+    },
+    "ord": {
+        "prefix": "ord",
+        "body": [
+            "ord(${1:c})"
+        ],
+        "description": "return an integer representing the Unicode code point of that character"
+    },
+    "pow": {
+        "prefix": "pow",
+        "body": [
+            "pow(${1:x}, ${2:y})"
+        ],
+        "description": "return x to the power y"
+    },
+    "print": {
+        "prefix": "print",
+        "body": [
+            "print(${1:object})"
+        ],
+        "description": "print objects to the text stream file"
+    },
+    "property": {
+        "prefix": "property",
+        "body": [
+            "property(${1:get}, ${2:set}, ${3:del}, ${4:doc})"
+        ],
+        "description": "return a property attribute."
+    },
+    "range": {
+        "prefix": "range",
+        "body": [
+            "range(${1:start}, ${2:stop})"
+        ],
+        "description": "the range type represents an immutable sequence of numbers"
+    },
+    "repr": {
+        "prefix": "repr",
+        "body": [
+            "repr(${1:object})"
+        ],
+        "description": "return a string containing a printable representation of an object"
+    },
+    "reversed": {
+        "prefix": "reversed",
+        "body": [
+            "reversed(${1:seq})"
+        ],
+        "description": "return a reverse iterator"
+    },
+    "round": {
+        "prefix": "round",
+        "body": [
+            "round(${1:num})"
+        ],
+        "description": "return number rounded to ndigits precision after the decimal point"
+    },
+    "set": {
+        "prefix": "set",
+        "body": [
+            "set(${1:iterable})"
+        ],
+        "description": "return a new set object with elements taken from iterable"
+    },
+    "setattr": {
+        "prefix": "setattr",
+        "body": [
+            "setattr(${1:object}, ${2:name}, ${3:value})"
+        ],
+        "description": "the counterpart of getattr()"
+    },
+    "slice": {
+        "prefix": "slice",
+        "body": [
+            "slice(${1:start}, ${2:stop})"
+        ],
+        "description": "return a slice object representing the set of indices specified by range"
+    },
+    "sorted": {
+        "prefix": "sorted",
+        "body": [
+            "sorted(${1:iterable})"
+        ],
+        "description": "return a new sorted list from the items in iterable"
+    },
+    "staticmethod": {
+        "prefix": "staticmethod",
+        "body": [
+            "staticmethod(${1:func})"
+        ],
+        "description": "transform a method into a static method"
+    },
+    "str": {
+        "prefix": "str",
+        "body": [
+            "str(${1:object})"
+        ],
+        "description": "return a str version of object"
+    },
+    "sum": {
+        "prefix": "sum",
+        "body": [
+            "sum(${1:iterable})"
+        ],
+        "description": "sums start and the items of an iterable from left to right and returns the total"
+    },
+    "super": {
+        "prefix": "super",
+        "body": [
+            "super()"
+        ],
+        "description": "return a proxy object that delegates method calls to a parent or sibling class of type"
+    },
+    "tuple": {
+        "prefix": "tuple",
+        "body": [
+            "tuple(${1:iterable})"
+        ],
+        "description": "build a tuple whose items are the same and in the same order as iterable's items"
+    },
+    "type": {
+        "prefix": "type",
+        "body": [
+            "type(${1:object})"
+        ],
+        "description": "return the type of an object"
+    },
+    "vars": {
+        "prefix": "vars",
+        "body": [
+            "vars(${1:object})"
+        ],
+        "description": "return the __dict__ attribute for object with a __dict__ attribute"
+    },
+    "zip": {
+        "prefix": "zip",
+        "body": [
+            "zip(${1:iterables})"
+        ],
+        "description": "make an iterator that aggregates elements from each of the iterables"
+    },
+    "__import__": {
+        "prefix": "__import__",
+        "body": [
+            "__import__(${1:name})"
+        ],
+        "description": "this function is invoked by the import statement"
+    }
+}

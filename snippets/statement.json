@@ -1,0 +1,156 @@
+{
+    "for": {
+        "prefix": "for",
+        "body": [
+            "for ${1:item} in ${2:list}:",
+            "    $3"
+        ],
+        "description": "create a loop"
+    },
+    "for...else": {
+        "prefix": "for",
+        "body": [
+            "for ${1:item} in ${2:list}:",
+            "    $3",
+            "else:",
+            "    $4"
+        ],
+        "description": "create a loop with else"
+    },
+    "while": {
+        "prefix": "while",
+        "body": [
+            "while ${1:condition}:",
+            "    $2"
+        ],
+        "description": "create a while loop"
+    },
+    "while...else": {
+        "prefix": "while",
+        "body": [
+            "while ${1:condition}:",
+            "    $2",
+            "else:",
+            "    $3"
+        ],
+        "description": "create a while loop with else"
+    },
+    "if": {
+        "prefix": "if",
+        "body": [
+            "if ${1:condition}:",
+            "    $2"
+        ],
+        "description": "create a conditional statement"
+    },
+    "if...else": {
+        "prefix": "if",
+        "body": [
+            "if ${1:condition}:",
+            "    $2",
+            "else:",
+            "    $3"
+        ],
+        "description": "create a condition statement with else"
+    },
+    "if...elif...else": {
+        "prefix": "if",
+        "body": [
+            "if ${1:condition}:",
+            "    $2",
+            "elif ${3:condition}:",
+            "    $4",
+            "else:",
+            "    $5"
+        ],
+        "description": "a if statement with elif and else condition"
+    },
+    "raise": {
+        "prefix": "raise",
+        "body": [
+            "raise ${1:type}(${2:message})"
+        ],
+        "description": "raise a error yourselves"
+    },
+    "assert": {
+        "prefix": "assert",
+        "body": [
+            "assert ${1:condition}, ${2:message}"
+        ],
+        "description": "check if the condition is right"
+    },
+    "try...except": {
+        "prefix": "try",
+        "body": [
+            "try:",
+            "    $1",
+            "except Exception as e:",
+            "    $2"
+        ],
+        "description": "try something might be wrong"
+    },
+    "import": {
+        "prefix": "import",
+        "body": [
+            "import ${1:module}"
+        ],
+        "description": "import a module directly"
+    },
+    "from...import": {
+        "prefix": "from",
+        "body": [
+            "from ${1:module} import ${2:thing}"
+        ],
+        "description": "import a thing from a module"
+    },
+    "import...as": {
+        "prefix": "import",
+        "body": [
+            "import ${1:module} as ${2:name}"
+        ],
+        "description": "import a module and rename it"
+    },
+    "from...import...as": {
+        "prefix": "from",
+        "body": [
+            "from ${1:module} import ${2:thing} as ${3:name}"
+        ],
+        "description": "import a thing from a module and rename"
+    },
+    "with": {
+        "prefix": "with",
+        "body": [
+            "with ${1:do} as ${2:name}:",
+            "    $3"
+        ],
+        "description": "a more beautiful than try"
+    },
+    "global": {
+        "prefix": "global",
+        "body": [
+            "global ${1:attr}"
+        ],
+        "description": "change the attr global"
+    },
+    "nonlocal": {
+        "prefix": "nonlocal",
+        "body": [
+            "nonlocal ${1:attr}"
+        ],
+        "description": "use attr outside"
+    },
+    "lambda": {
+        "prefix": "lambda",
+        "body": [
+            "lambda ${1:attr}:${2:do}"
+        ],
+        "description": "create a simple function"
+    },
+    "yield": {
+        "prefix": "yield",
+        "body": [
+            "yield ${1:thing}"
+        ],
+        "description": "yield to make lazy calculation"
+    }
+}
