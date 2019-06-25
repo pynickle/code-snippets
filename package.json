@@ -2,6 +2,11 @@
     "name": "useful-python-snippets",
     "displayName": "python-snippets",
     "description": "have efficient coding experience for python",
+    "author": "nick",
+    "keywords": [
+        "snippets",
+        "python"
+    ],
     "publisher": "pynickle",
     "repository": "https://github.com/pynickle/useful-python-snippets",
     "version": "0.1.0",
@@ -12,9 +17,14 @@
         "Snippets"
     ],
     "contributes": {
-        "snippets": [{
-            "language": "python",
-            "path": "./snippets/main.json"
-        }]
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/main.json"
+            }
+        ]
+    },
+    "dependencies": {
+        "vscode": "^1.1.34"
     }
 }
