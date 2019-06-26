@@ -35,8 +35,5 @@
                 "path": "./snippets/always.json"
             }
         ]
-    },
-    "dependencies": {
-        "vscode": "^1.1.34"
     }
 }
