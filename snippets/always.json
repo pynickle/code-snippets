@@ -89,5 +89,26 @@
             "os.getcwd()"
         ],
         "description": "get your working directory right now"
+    },
+    "exit": {
+        "prefix": "exit",
+        "body": [
+            "sys.exit()"
+        ],
+        "description": "exit the program by sys"
+    },
+    "print_exc": {
+        "prefix": "print_exc",
+        "body": [
+            "traceback.print_exc()"
+        ],
+        "description": "print the error during the program"
+    },
+    "path.exists": {
+        "prefix": "path.exists",
+        "body": [
+            "os.path.exists(${1:path})"
+        ],
+        "description": "check if the path exists by os"
     }
 }

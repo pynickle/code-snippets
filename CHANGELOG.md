@@ -21,3 +21,7 @@ fix bugs
 ## 0.1.0
 
 finish statements and built-in functions
+
+## 0.1.1
+
+add more always
