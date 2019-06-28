@@ -1,10 +1,87 @@
 {
-    "os.walk": {
-        "prefix": "for",
+    "numpy": {
+        "prefix": "numpy",
         "body": [
-            "for root, dirs, files in os.walk(${1:path}):"
+            "import numpy as np"
         ],
-        "description": "use os to walk the path"
+        "description": "import numpy module as np"
+    },
+    "tensorflow": {
+        "prefix": "tensorflow",
+        "body": [
+            "import tensorflow as tf"
+        ],
+        "description": "import tensorflow module as tf"
+    },
+    "matplotlib": {
+        "prefix": "matplotlib.pyplot",
+        "body": [
+            "from matplotlib.pyplot as plt"
+        ],
+        "description": "import pyplot in matplotlib as plt"
+    },
+    "lru_cache": {
+        "prefix": "@lru_cache",
+        "body": [
+            "@lru_cache(${1:maxsize})"
+        ],
+        "description": "use cache to calculate"
+    },
+    "reader": {
+        "prefix": "reader",
+        "body": [
+            "csv.reader(${1:file})"
+        ],
+        "description": "use csv to read csv file"
+    },
+    "writer": {
+        "prefix": "writer",
+        "body": [
+            "csv.writer(${1:file})"
+        ],
+        "description": "use csv to write csv file"
+    },
+    "debug": {
+        "prefix": "debug",
+        "body": [
+            "logging.debug(${1:msg})"
+        ],
+        "description": "logging debug msg"
+    },
+    "info": {
+        "prefix": "info",
+        "body": [
+            "logging.info(${1:msg})"
+        ],
+        "description": "logging info msg"
+    },
+    "warning": {
+        "prefix": "warning",
+        "body": [
+            "logging.warning(${1:msg})"
+        ],
+        "description": "logging warning msg"
+    },
+    "error": {
+        "prefix": "error",
+        "body": [
+            "logging.error(${1:msg})"
+        ],
+        "description": "logging error msg"
+    },
+    "critical": {
+        "prefix": "critical",
+        "body": [
+            "logging.critical(${1:msg})"
+        ],
+        "description": "logging critical msg"
+    },
+    "log": {
+        "prefix": "log",
+        "body": [
+            "logging.log(${1:level}, ${2:msg})"
+        ],
+        "description": "logging log msg with level"
     },
     "tkinter.Tk": {
         "prefix":"Tk()",
@@ -55,19 +132,12 @@
         ],
         "description": "add an argument from argparse"
     },
-    "numpy": {
-        "prefix": "numpy",
+    "os.walk": {
+        "prefix": "for",
         "body": [
-            "import numpy as np"
+            "for root, dirs, files in os.walk(${1:path}):"
         ],
-        "description": "import numpy module as np"
-    },
-    "matplotlib": {
-        "prefix": "matplotlib.pyplot",
-        "body": [
-            "from matplotlib.pyplot as plt"
-        ],
-        "description": "import pyplot in matplotlib as plt"
+        "description": "use os to walk the path"
     },
     "listdir": {
         "prefix": "listdir",
@@ -90,6 +160,13 @@
         ],
         "description": "get your working directory right now"
     },
+    "path.exists": {
+        "prefix": "path.exists",
+        "body": [
+            "os.path.exists(${1:path})"
+        ],
+        "description": "check if the path exists by os"
+    },
     "exit": {
         "prefix": "exit",
         "body": [
@@ -104,11 +181,18 @@
         ],
         "description": "print the error during the program"
     },
-    "path.exists": {
-        "prefix": "path.exists",
+    "time": {
+        "prefix": "time",
         "body": [
-            "os.path.exists(${1:path})"
+            "time.time()"
         ],
-        "description": "check if the path exists by os"
+        "description": "get time now"
+    },
+    "pprint": {
+        "prefix": "pprint",
+        "body": [
+            "pprint.pprint(${1:str})"
+        ],
+        "description": "print str beautifully"
     }
 }
