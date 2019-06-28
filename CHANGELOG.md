@@ -25,3 +25,7 @@ finish statements and built-in functions
 ## 0.1.1
 
 add more always
+
+## 0.1.2
+
+add more always.json
