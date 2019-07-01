@@ -9,7 +9,7 @@
     ],
     "publisher": "pynickle",
     "repository": "https://github.com/pynickle/useful-python-snippets",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "engines": {
         "vscode": "^1.35.0"
     },
@@ -17,22 +17,22 @@
         "Snippets"
     ],
     "contributes": {
-        "snippets": [
+        "snippets":[
             {
                 "language": "python",
                 "path": "./snippets/statement.json"
-            }
-        ],
-        "snippets": [
+            },
             {
                 "language": "python",
                 "path": "./snippets/builtin_func.json"
-            }
-        ],
-        "snippets": [
+            },
             {
                 "language": "python",
                 "path": "./snippets/always.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/standard_libraries.json"
             }
         ]
     }

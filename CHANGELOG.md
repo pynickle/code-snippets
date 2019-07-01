@@ -1,6 +1,6 @@
 ## 0.0.1
 
-support all statement
+now support all statement
 
 ## 0.0.2
 
@@ -20,12 +20,16 @@ fix bugs
 
 ## 0.1.0
 
-finish statements and built-in functions
+finish all statements and built-in functions
 
 ## 0.1.1
 
-add more always
+add more always.json
 
 ## 0.1.2
 
 add more always.json
+
+## 0.2.0
+
+add more always, split always.json to standard_libraries.json and always.json, fix bugs

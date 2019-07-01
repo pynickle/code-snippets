@@ -1,0 +1,205 @@
+{
+    "__future__": {
+        "prefix": "from __future__ import",
+        "body": [
+            "from __future__ import unicode_literals, absolute_import, division, print_function"
+        ],
+        "description": "import __future__ module for python2"
+    },
+    "property": {
+        "prefix": "@property",
+        "body": [
+            "@property"
+        ],
+        "description": "add the property decorator for func"
+    },
+    "lru_cache": {
+        "prefix": "@lru_cache",
+        "body": [
+            "@lru_cache(${1:maxsize})"
+        ],
+        "description": "use cache to calculate"
+    },
+    "set_trace": {
+        "prefix": "pdb.set_trace()",
+        "body": [
+            "import pdb; pdb.set_trace()"
+        ],
+        "desscription": "use pdb to debug the program"
+    },
+    "reader": {
+        "prefix": "reader",
+        "body": [
+            "csv.reader(${1:file})"
+        ],
+        "description": "use csv to read csv file"
+    },
+    "writer": {
+        "prefix": "csv.writer",
+        "body": [
+            "csv.writer(${1:file})"
+        ],
+        "description": "use csv to write csv file"
+    },
+    "debug": {
+        "prefix": "logging.debug",
+        "body": [
+            "logging.debug(${1:msg})"
+        ],
+        "description": "logging debug msg"
+    },
+    "info": {
+        "prefix": "logging.info",
+        "body": [
+            "logging.info(${1:msg})"
+        ],
+        "description": "logging info msg"
+    },
+    "warning": {
+        "prefix": "logging.warning",
+        "body": [
+            "logging.warning(${1:msg})"
+        ],
+        "description": "logging warning msg"
+    },
+    "error": {
+        "prefix": "logging.error",
+        "body": [
+            "logging.error(${1:msg})"
+        ],
+        "description": "logging error msg"
+    },
+    "critical": {
+        "prefix": "logging.critical",
+        "body": [
+            "logging.critical(${1:msg})"
+        ],
+        "description": "logging critical msg"
+    },
+    "log": {
+        "prefix": "logging.log",
+        "body": [
+            "logging.log(${1:level}, ${2:msg})"
+        ],
+        "description": "logging log msg with level"
+    },
+    "tkinter.Tk": {
+        "prefix":"root = tkinter.Tk()",
+        "body": [
+            "root = tk.Tk()"
+        ],
+        "description": "create a tkinter window"
+    },
+    "Button": {
+        "prefix": "tk.Button",
+        "body": [
+            "tk.Button(${1:root}, text=\"${2:msg}\")"
+        ],
+        "description": "create a button on the tk screen"
+    },
+    "Label": {
+        "prefix": "tk.Label",
+        "body": [
+            "tk.Label(${1:root}, text=\"${2:msg}\")"
+        ],
+        "description": "create a label on the tk screen"
+    },
+    "entry": {
+        "prefix": "tk.Entry",
+        "body": [
+            "tk.Entry(${1:root})"
+        ],
+        "description": "create an entry on the tk screen"
+    },
+    "pack": {
+        "prefix": ".pack",
+        "body": [
+            ".pack()"
+        ],
+        "description": "pack a tkinter object"
+    },
+    "root.mainloop": {
+        "prefix": "root.mainloop()",
+        "body": [
+            "root.mainloop()"
+        ],
+        "description": "let tkinter window run"
+    },
+    "parser": {
+        "prefix": "argparse.ArgumentParser()",
+        "body": [
+            "parser = argparse.ArgumentParser()"
+        ],
+        "description": "create an argument parser from argparse"
+    },
+    "args": {
+        "prefix": "parser.parse_args",
+        "body": [
+            "args = parser.parse_args"
+        ],
+        "description": "parse the argument from argparse"
+    },
+    "add_argument": {
+        "prefix": "parser.add_argument",
+        "body": [
+            "parser.add_argument(${1:name})"
+        ],
+        "description": "add an argument from argparse"
+    },
+    "listdir": {
+        "prefix": "os.listdir",
+        "body": [
+            "os.listdir(${1:path})"
+        ],
+        "description": "get all files under the path by os"
+    },
+    "system": {
+        "prefix": "os.system",
+        "body": [
+            "os.system(${1:command})"
+        ],
+        "description": "execute a command by os"
+    },
+    "getcwd": {
+        "prefix": "os.getcwd",
+        "body": [
+            "os.getcwd()"
+        ],
+        "description": "get your working directory right now"
+    },
+    "path.exists": {
+        "prefix": "os.path.exists",
+        "body": [
+            "os.path.exists(${1:path})"
+        ],
+        "description": "check if the path exists by os"
+    },
+    "exit": {
+        "prefix": "sys.exit",
+        "body": [
+            "sys.exit()"
+        ],
+        "description": "exit the program by sys"
+    },
+    "print_exc": {
+        "prefix": "traceback.print_exc",
+        "body": [
+            "traceback.print_exc()"
+        ],
+        "description": "print the error during the program"
+    },
+    "time": {
+        "prefix": "time.time",
+        "body": [
+            "time.time()"
+        ],
+        "description": "get time now"
+    },
+    "pprint": {
+        "prefix": "pprint.pprint",
+        "body": [
+            "pprint.pprint(${1:str})"
+        ],
+        "description": "print str beautifully"
+    }
+}
