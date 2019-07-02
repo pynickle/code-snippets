@@ -119,18 +119,25 @@
         "description": "pack a tkinter object"
     },
     "root.mainloop": {
-        "prefix": "root.mainloop()",
+        "prefix": "root.mainloop",
         "body": [
             "root.mainloop()"
         ],
         "description": "let tkinter window run"
     },
     "parser": {
-        "prefix": "argparse.ArgumentParser()",
+        "prefix": "argparse.ArgumentParser",
         "body": [
             "parser = argparse.ArgumentParser()"
         ],
         "description": "create an argument parser from argparse"
+    },
+    "FileType": {
+        "prefix": "argparse.FileType",
+        "body": [
+            "argparse.FileType"
+        ],
+        "description": "file input type of argparse"
     },
     "args": {
         "prefix": "parser.parse_args",
@@ -145,6 +152,20 @@
             "parser.add_argument(${1:name})"
         ],
         "description": "add an argument from argparse"
+    },
+    "add_subparsers": {
+        "prefix": "parser.add_subparsers",
+        "body": [
+            "parser.add_subparsers()"
+        ],
+        "description": "add a subparser of the main parser"
+    },
+    "add_mutually_exclusive_group": {
+        "prefix": "parser.add_mutually_exclusive_group",
+        "body": [
+            "parser.add_mutually_exclusive_group()"
+        ],
+        "description": "add a mutually exclusive group of the parser"
     },
     "listdir": {
         "prefix": "os.listdir",
@@ -201,5 +222,68 @@
             "pprint.pprint(${1:str})"
         ],
         "description": "print str beautifully"
+    },
+    "match": {
+        "prefix": "re.match",
+        "body": [
+            "re.match(${1:pattern}, ${2:string})"
+        ],
+        "description": "match a string in the beginning of the string"
+    },
+    "search": {
+        "prefix": "re.search",
+        "body": [
+            "re.search(${1:pattern}, ${2:string})"
+        ],
+        "description": "scan all of the string and return the result"
+    },
+    "sub": {
+        "prefix": "re.sub",
+        "body": [
+            "re.sub(${1:pattern}, ${2:repl}, ${3:string})"
+        ],
+        "description": "use the pattern to search in string and replace the result with repl"
+    },
+    "compile": {
+        "prefix": "re.compile",
+        "body": [
+            "re.compile(${1:pattern})"
+        ],
+        "description": "compile a pattern"
+    },
+    "findall": {
+        "prefix": "re.findall",
+        "body": [
+            "re.findall(${1:pattern}, ${2:string})"
+        ],
+        "description": "find all string in the string with the pattern"
+    },
+    "randrange": {
+        "prefix": "random.randrange",
+        "body": [
+            "random.randrange(${1:stop})"
+        ],
+        "description": "get a random number from start to stop"
+    },
+    "randint": {
+        "prefix": "random.randint",
+        "body": [
+            "random.randint(${1:start},${2:stop})"
+        ],
+        "description": "randrange that includes stop"
+    },
+    "random": {
+        "prefix": "random.random",
+        "body": [
+            "random.random()"
+        ],
+        "description": "create a random number from zero to one"
+    },
+    "testmod": {
+        "prefix": "doctest.testmod",
+        "body": [
+            "doctest.testmod()"
+        ],
+        "description": "doctest the file"
     }
 }

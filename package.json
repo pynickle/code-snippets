@@ -9,7 +9,7 @@
     ],
     "publisher": "pynickle",
     "repository": "https://github.com/pynickle/useful-python-snippets",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "engines": {
         "vscode": "^1.35.0"
     },

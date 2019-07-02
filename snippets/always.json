@@ -27,6 +27,12 @@
         ],
         "description": "import tkinter GUI module as tk"
     },
+    "pathlib": {
+        "prefix": "from pathlib",
+        "body": [
+            "from pathlib import Path"
+        ]
+    },
     "for enumerate": {
         "prefix": "for index, nums",
         "body": [
