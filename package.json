@@ -1,16 +1,18 @@
 {
     "name": "code-snippets",
-    "displayName": "code--snippets",
+    "displayName": "code-snippets",
     "description": "have efficient coding experience",
     "author": "nick",
+    "icon": "./icon.jpg",
     "keywords": [
         "snippets",
         "python",
-        "json"
+        "json",
+        "java"
     ],
     "publisher": "pynickle",
-    "repository": "https://github.com/pynickle/useful-python-snippets",
-    "version": "1.0.0",
+    "repository": "https://github.com/pynickle/code-snippets",
+    "version": "1.0.2",
     "engines": {
         "vscode": "^1.35.0"
     },
@@ -41,7 +43,7 @@
             },
             {
                 "language": "json",
-                "path": "./python_snippets/develop.json"
+                "path": "./json_snippets/develop.json"
             },
             {
                 "language": "java",

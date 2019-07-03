@@ -37,3 +37,11 @@ Add more, fix develop.json
 ## 1.0.0
 
 Change name to code-snippets, working on java snippets now!
+
+## 1.0.1
+
+fix bugs.
+
+## 1.0.2
+
+Add icon

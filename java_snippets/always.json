@@ -18,5 +18,77 @@
             "}"
         ],
         "description": "create a public class of java"
+    },
+    "public void": {
+        "prefix": "public void",
+        "body": [
+            "public void ${1:name}{",
+            "    $2",
+            "}"
+        ],
+        "description": "create a public void function"
+    },
+    "byte": {
+        "prefix": "byte",
+        "body": [
+            "byte ${1:name} = ${2:value};"
+        ],
+        "description": "create a byte object"
+    },
+    "short": {
+        "prefix": "short",
+        "body": [
+            "short ${1:name} = ${2:value};"
+        ],
+        "description": "create a short object"
+    },
+    "int": {
+        "prefix": "int",
+        "body": [
+            "int ${1:name} = ${2:value};"
+        ],
+        "description": "create a integar object"
+    },
+    "long": {
+        "prefix": "long",
+        "body": [
+            "long ${1:name} = ${2:value};"
+        ],
+        "description": "create a long object"
+    },
+    "float": {
+        "prefix": "float",
+        "body": [
+            "float ${1:name} = ${2:value};"
+        ],
+        "description": "create a float object"
+    },
+    "double": {
+        "prefix": "double",
+        "body": [
+            "double ${1:name} = ${2:value};"
+        ],
+        "description": "create a double object"
+    },
+    "char": {
+        "prefix": "char",
+        "body": [
+            "char ${1:name} = ${2:value};"
+        ],
+        "description": "create a char object"
+    },
+    "String": {
+        "prefix": "String",
+        "body": [
+            "String ${1:name} = ${2:value};"
+        ],
+        "description": "create a string object"
+    },
+    "boolean": {
+        "prefix": "boolean",
+        "body": [
+            "boolean ${1:name} = ${2:value};"
+        ],
+        "description": "create a boolean object"
     }
 }
