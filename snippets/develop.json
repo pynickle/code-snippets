@@ -1,0 +1,13 @@
+{
+    "vscode-snippets": {
+        "prefix": "vscode-snippets",
+        "body": [
+            "\"${1:name}\": {",
+            "    \"prefix\": \"${2:pre}\",",
+            "    \"body\": [",
+            "        \"${3:main}\"",
+            "    ]",
+            "}"
+        ]
+    }
+}
