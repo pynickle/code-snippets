@@ -29,3 +29,11 @@ add more always.json
 ## 0.3.0
 
 create string_method.json, create develop.json(vscode-snippets snippets), add more always.json
+
+## 0.3.1
+
+Add more, fix develop.json
+
+## 1.0.0
+
+Change name to code-snippets, working on java snippets now!

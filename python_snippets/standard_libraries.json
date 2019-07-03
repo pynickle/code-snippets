@@ -285,5 +285,19 @@
             "doctest.testmod()"
         ],
         "description": "doctest the file"
+    },
+    "copy": {
+        "prefix": "copy.copy",
+        "body": [
+            "copy.copy(${1:x})"
+        ],
+        "description": "copy x"
+    },
+    "deepcopy": {
+        "prefix": "copy.deepcopy",
+        "body": [
+            "deepcopy(${1:x})"
+        ],
+        "description": "deep copy x"
     }
 }

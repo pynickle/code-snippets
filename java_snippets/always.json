@@ -1,0 +1,22 @@
+{
+    "main class": {
+        "prefix": "public class",
+        "body": [
+            "public class ${1:ClassName} {",
+            "    public static void main(String[] args) {",
+            "        $2",
+            "    }",
+            "}",
+        ],
+        "description": "create a main class of java"
+    },
+    "public class": {
+        "prefix": "public class",
+        "body": [
+            "public class ${1:ClassName} {",
+            "    $2",
+            "}"
+        ],
+        "description": "create a public class of java"
+    }
+}

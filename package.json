@@ -1,15 +1,16 @@
 {
-    "name": "useful-python-snippets",
-    "displayName": "python-snippets",
-    "description": "have efficient coding experience for python",
+    "name": "code-snippets",
+    "displayName": "code--snippets",
+    "description": "have efficient coding experience",
     "author": "nick",
     "keywords": [
         "snippets",
-        "python"
+        "python",
+        "json"
     ],
     "publisher": "pynickle",
     "repository": "https://github.com/pynickle/useful-python-snippets",
-    "version": "0.3.0",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.35.0"
     },
@@ -20,27 +21,31 @@
         "snippets":[
             {
                 "language": "python",
-                "path": "./snippets/statement.json"
+                "path": "./python_snippets/statement.json"
             },
             {
                 "language": "python",
-                "path": "./snippets/builtin_func.json"
+                "path": "./python_snippets/builtin_func.json"
             },
             {
                 "language": "python",
-                "path": "./snippets/always.json"
+                "path": "./python_snippets/always.json"
             },
             {
                 "language": "python",
-                "path": "./snippets/standard_libraries.json"
+                "path": "./python_snippets/standard_libraries.json"
             },
             {
                 "language": "python",
-                "path": "./snippets/string_method.json"
+                "path": "./python_snippets/string_method.json"
             },
             {
                 "language": "json",
-                "path": "./snippets/develop.json"
+                "path": "./python_snippets/develop.json"
+            },
+            {
+                "language": "java",
+                "path": "./java_snippets/always.json"
             }
         ]
     }

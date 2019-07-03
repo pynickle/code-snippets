@@ -10,4 +10,3 @@ for root, dirs, files in os.walk("./snippets"):
         with open("./snippets/main.json", "a", encoding="utf-8") as f1:
             with open(root + "/" + file, "r", encoding="utf-8") as f2:
                 f1.write(f2.read())
-                

@@ -1,0 +1,93 @@
+{
+    ".isupper": {
+        "prefix": ".isupper",
+        "body": [
+            ".isupper()"
+        ],
+        "description": "check if all of the string is upper str"
+    },
+    ".islower": {
+        "prefix": ".islower",
+        "body": [
+            ".islower()"
+        ],
+        "description": "check if all of the string is lower str"
+    },
+    ".lower": {
+        "prefix": ".lower",
+        "body": [
+            ".lower()"
+        ],
+        "description": "lower all the str in the string"
+    },
+    ".upper": {
+        "prefix": ".upper",
+        "body": [
+            ".upper()"
+        ],
+        "description": "upper all the str in the string"
+    },
+    ".capitalize": {
+        "prefix": ".capitalize",
+        "body": [
+            ".capitalize()"
+        ],
+        "description": "capitalize the string"
+    },
+    ".zfill": {
+        "prefix": ".zfill",
+        "body": [
+            ".zfill(${1:width})"
+        ],
+        "description": "fill the zero with blank to make the length turn into width"
+    },
+    ".isspace": {
+        "prefix": ".isspace",
+        "body": [
+            ".isspace()"
+        ],
+        "description": "check if the string contains only space"
+    },
+    ".isdigit": {
+        "prefix": ".isdigit",
+        "body": [
+            ".isdigit()"
+        ],
+        "description": "return True if it is a digit string"
+    },
+    ".isprintable": {
+        "prefix": ".isprintable",
+        "body": [
+            ".isprintable()"
+        ],
+        "description": "check if it is a printable object"
+    },
+    ".isnumeric": {
+        "prefix": ".isnumeric",
+        "body": [
+            ".isnumeric()"
+        ],
+        "description": "check if the string contains only numbers"
+    },
+    ".endswith": {
+        "prefix": ".endswith",
+        "body": [
+            ".endswith(${1:string})"
+        ],
+        "description": "return True if the string ends with another string"
+    },
+    ".isidentifier": {
+        "prefix": ".isidentifier",
+        "body": [
+            ".isidentifier()"
+        ],
+        "description": "check if the string is a valid python identifier"
+    },
+    ".title": {
+        "prefix": ".title",
+        "body": [
+            ".title()"
+        ],
+        "description": "return a version of the string where each word is titlecased."
+    }
+}
